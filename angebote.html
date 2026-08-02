@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de" class="nojs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Islamischer Verein Hanau e.V.</title>
+
+<meta name="description" content="Islamischer Verein Hanau e.V.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+}
+
+.js-required{
+    display:none;
+    max-width:700px;
+    margin:40px auto;
+    padding:20px;
+    background:#f9c9d6;
+    border-radius:8px;
+    text-align:center;
+}
+
+.nojs .js-required{
+    display:block;
+}
+
+.header{
+    height:52px;
+    background:linear-gradient(#464646,#262626);
+    border-bottom:5px solid #0f766e;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo{
+    color:white;
+    font-size:1.6rem;
+    font-style:italic;
+    font-weight:normal;
+}
+
+.loader-wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.loader{
+    width:50px;
+    height:50px;
+    border:6px solid rgba(0,0,0,.15);
+    border-top:6px solid #262626;
+    border-radius:50%;
+    animation:spin 0.8s linear infinite;
+    margin:0 auto 15px;
+}
+
+.loading-text{
+    font-weight:bold;
+    color:#262626;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    padding:15px;
+    text-align:center;
+    background:#f5f5f5;
+    border-top:1px solid #ddd;
+    font-size:14px;
+}
+
+footer a{
+    color:#0f766e;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+</style>
+
+<script>
+document.documentElement.classList.remove('nojs');
+</script>
+
+</head>
+<body>
+
+<header class="header">
+    <h1 class="logo">Islamischer Verein Hanau e.V.</h1>
+</header>
+
+<div class="js-required">
+    JavaScript ist in Ihrem Browser deaktiviert.<br><br>
+    Bitte aktivieren Sie JavaScript oder verwenden Sie einen modernen Browser.
+</div>
+
+<div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loading-text">
+        Die Webseite wird geladen...
+    </div>
+</div>
+
+<footer>
+    Gärtnerstr. 30 · 63450 Hanau |
+    Tel. 06181 251588 |
+    <a href="mailto:info@ivhanau.de">info@ivhanau.de</a>
+    <br><br>
+    <a href="datenschutzinformation.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+</footer>
+
+</body>
+</html>
